@@ -219,22 +219,3 @@ if __name__ == "__main__":
     #Declaring the object of the Class
     app = SpeechRecognitionApp()
     app.mainloop()                      #loop to run app Continously
-
-
-""" Replace the speech recognition module 'sapi5' with 'espeak'. The 'sapi5' module is specific to Windows, whereas 'espeak' is a cross-platform speech synthesizer for Linux.
-
-Replace the Tkinter module 'messagebox' with 'tkinter.messagebox'. Tkinter is a built-in module in Python, but the messagebox module is not always included with the package. On Ubuntu, you will need to import it separately.
-
-Replace the import statement 'import pyttsx3' with 'import pyttsx'. pyttsx3 is not available for Ubuntu and pyttsx is the library used for text-to-speech conversion on Ubuntu.
-
-Remove the import statement 'import socket' and the 'is_connected()' function. The socket module is not needed in this code and the 'is_connected()' function is not required as well.
-
-Replace the import statement 'from tkinter import PhotoImage' with 'from PIL import ImageTk, Image'. The PhotoImage module is not available in Ubuntu so we use PIL package to load and show images.
-
-Make sure you have espeak library installed on your system. You can install it by running the command 'sudo apt-get install espeak' in terminal.
-
-Replace the line 'engine.setProperty('voice', 'en-in')' with 'engine.setProperty('voice', 'english')' as espeak does not support 'en-in' language.
-
-Test your code on Ubuntu to ensure that it runs correctly.
-
-Please note that these are just general guidelines and your code may require additional modifications depending on how it is being used."""
